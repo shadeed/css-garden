@@ -116,28 +116,8 @@ body {
     @media (min-width: 800px) {
       .c-hero p {
         font-size: 1.25rem; } }
-
-.c-button {
-  position: relative;
-  top: 0;
-  font-weight: 500;
-  padding: 0.7rem 1.25rem;
-  color: #487135;
-  background: #E1F8D4;
-  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.24);
-  border-radius: 10px; }
-  .c-button:focus {
-    top: 4px;
-    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.24); }
-
-.c-button--multiple {
-  padding: 0.7rem 1.85rem;
-  background: #fff; }
-  .c-button--multiple:after {
-    content: "ishadeed.com";
-    display: block;
-    color: #8d8d8d;
-    font-weight: 400; }
+  .c-hero a {
+    text-decoration: underline; }
 
 .c-section {
   padding: 2rem 0; }
@@ -218,5 +198,28 @@ footer {
 iframe {
   background: #fff;
   border-radius: 7px; }
+
+.c-button {
+  position: relative;
+  top: 0;
+  font-weight: 500;
+  padding: 0.7rem 1.25rem;
+  color: #487135;
+  background: #E1F8D4;
+  box-shadow: 0 4px 0 0 rgba(0, 0, 0, 0.24);
+  border-radius: 10px;
+  text-decoration: none !important; }
+  .c-button:focus {
+    top: 4px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.24); }
+
+.c-button--multiple {
+  padding: 0.7rem 1.85rem;
+  background: #fff; }
+  .c-button--multiple:after {
+    content: "ishadeed.com";
+    display: block;
+    color: #8d8d8d;
+    font-weight: 400; }
 
 /*# sourceMappingURL=app.css.map */
