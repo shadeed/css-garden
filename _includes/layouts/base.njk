@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>{{ renderData.title or title or metadata.title }}</title>
+    <meta name="Description" content="{{ renderData.description or description or metadata.description }}">
+    <link rel="icon" type="image/png" href="/img/favicon.png" />
+    <link href="https://fonts.googleapis.com/css?family=Rubik:400,500,700&display=swap"
+      rel="stylesheet"/>
+    <link rel="stylesheet" href="https://use.typekit.net/xys8bwc.css" />
+    <link rel="stylesheet" href="{{ '/css/app.css' | url }}">
+    <link rel="stylesheet" href="styles/challenges/article-design/index.css" />
+  </head>
+  <body>
+    <div class="o-wrapper">
+        <header class="c-header">
+          <h1><a href="/">Learn CSS Garden</a></h1>
+          <a href="#" class="c-button">Submit a design</a>
+        </header>
+    </div>
+
+      {{ content | safe }}
+
+    <footer>
+      <div class="o-wrapper">
+        <p style="text-align: center;">Learn CSS Garden © 2020</p>
+      </div>
+    </footer>
+  </body>
+</html>

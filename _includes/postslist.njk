@@ -1,0 +1,10 @@
+<div class="c-challenges__wrapper">
+  {% for post in postslist %}
+  <article class="c-challenge">
+    <img src="{{ post.data.thumb }}" alt="">
+    <h3 class="c-challenge__title">{{ post.data.title }}</h3>
+    <p class="c-challenge__desc">{{ post.data.styles }} styles</p>
+    <a href="{{ post.url | url }}" class="c-challenge__link">View styles</a>
+  </article>
+  {% endfor %}
+</div>

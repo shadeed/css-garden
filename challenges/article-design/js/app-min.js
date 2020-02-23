@@ -1,0 +1,1 @@
+let fieldset=document.querySelector("form > div"),body=document.querySelector("body");fieldset.addEventListener("click",(function(t){if(null!=t.target.type){let e=t.target.id.match(/\d+/)[0];body.setAttribute("class",""),body.classList.add(`option-${e}`)}}));
