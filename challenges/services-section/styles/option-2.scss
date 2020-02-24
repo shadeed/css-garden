@@ -1,0 +1,118 @@
+div.option-2 {
+  * {
+    color: #323d51;
+    font-family: "Open Sans";
+  }
+  .c-section {
+    padding: 30px;
+  }
+
+  .c-section__title {
+      font-size: 1.5rem;
+      margin-bottom: 1rem;
+  }
+
+  .c-services {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: grid;
+
+    //grid-gap: 22px;
+    @media (min-width: 550px) {
+      grid-template-columns: 1fr 1fr;
+    }
+    @media (min-width: 800px) {
+      grid-template-columns: 1fr 1fr 1fr;
+    }
+  }
+
+  .c-services__item {
+    padding: 16px;
+    position: relative;
+
+    &::before {
+      content: "";
+      display: block;
+      //background: rgba(0,0,0,0.1);
+      width: 0px;
+      height: 0px;
+      position: absolute;
+      top: 0;
+      right: 0;
+      border-top: 20px solid rgba(0, 0, 0, 0.03);
+      border-right: 20px solid rgba(0, 0, 0, 0.03);
+      border-left: 20px solid transparent;
+      border-bottom: 20px solid transparent;
+    }
+    h3 {
+      margin-bottom: 1rem;
+    }
+    p {
+      margin-bottom: 0;
+    }
+
+    h3 {
+      // margin-bottom: 12px;
+      position: relative;
+      &::after {
+        content: "";
+        display: block;
+        background: orange;
+        width: 30px;
+        height: 5px;
+        border-radius: 20px;
+        margin-top: 12px;
+      }
+    }
+  }
+
+  .c-services__item:nth-child(1) {
+    background: #f0f8ff;
+    h3 {
+      &::after {
+        background: #bce0ff;
+      }
+    }
+  }
+  .c-services__item:nth-child(2) {
+    background: #f8f8ff;
+    h3 {
+      &::after {
+        background: #d2d2ff;
+      }
+    }
+  }
+  .c-services__item:nth-child(3) {
+    background: #fff5ee;
+    h3 {
+      &::after {
+        background: #fedac0;
+      }
+    }
+  }
+  .c-services__item:nth-child(4) {
+    background: #f0fff0;
+    h3 {
+      &::after {
+        background: #c9fec9;
+      }
+    }
+  }
+  .c-services__item:nth-child(5) {
+    background: #fff0f5;
+    h3 {
+      &::after {
+        background: #fec4d7;
+      }
+    }
+  }
+  .c-services__item:nth-child(6) {
+    background: #f0ffff;
+    h3 {
+      &::after {
+        background: #c7ffff;
+      }
+    }
+  }
+}

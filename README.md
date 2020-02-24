@@ -7,6 +7,7 @@ I got inspired by that and decided to make a similar project, but on a component
 Simply, choose an HTML markup that you like, or suggest one, and work on a unique design for it without changing the HTML markup. Please take the points below into consideration:
 - The design should be responsive.
 - Using modern CSS features is highly recommended (Grid, flex.. etc).
+- Please consider adding [CSS Reset](https://meyerweb.com/eric/tools/css/reset/) to your CSS.
 
 ## How to Submit
 Create a new issue on this repository and attach the CSS code, with the challenge name. If all is good, it will be added to the challenge page. It's that simple!
