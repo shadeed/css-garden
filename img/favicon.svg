@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="27px" viewBox="0 0 24 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 63.1 (92452) - https://sketch.com -->
+    <title>favicon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <rect id="path-1" x="0" y="0" width="32" height="32"></rect>
+        <path d="M27.125,26.151 L24.091,21.785 C22.278,23.376 20.539,23.746 17.764,23.746 L11.4,23.746 C12.917,22.895 13.916,21.304 13.916,19.121 L13.916,11.092 C13.916,9.205 15.174,7.836 16.876,7.836 C18.578,7.836 19.799,9.02 19.799,10.759 C19.799,12.091 18.985,13.127 17.912,13.83 L22.019,17.197 C24.017,15.865 25.608,13.053 25.608,10.352 C25.608,5.283 22.019,2.323 17.024,2.323 C11.585,2.323 8.033,6.023 8.033,11.092 L8.033,19.454 C8.033,21.896 7.034,23.339 4.74,23.672 L4.74,29 L18.171,29 C22.241,29 24.572,28.667 27.125,26.151 Z" id="path-3"></path>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="favicon" transform="translate(-4.000000, -2.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Rectangle" fill="#D8D8D8" opacity="0" xlink:href="#path-1"></use>
+            <g id="L" fill-rule="nonzero" mask="url(#mask-2)">
+                <use fill="#FFFFFF" xlink:href="#path-3"></use>
+                <use fill="#7BB95E" xlink:href="#path-3"></use>
+            </g>
+        </g>
+    </g>
+</svg>
