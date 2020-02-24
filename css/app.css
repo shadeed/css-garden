@@ -58,9 +58,12 @@ body {
 .c-header {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   padding: 1rem 0; }
+  @media (min-width: 800px) {
+    .c-header {
+      justify-content: space-between; } }
   .c-header h1 {
     font-family: coquette, sans-serif;
     font-weight: 800;
@@ -200,10 +203,6 @@ body {
 footer {
   background: url("../img/footer-bg.png") bottom center/contain repeat-x;
   height: 220px; }
-
-iframe {
-  background: #fff;
-  border-radius: 7px; }
 
 .c-button {
   position: relative;

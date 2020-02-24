@@ -12,9 +12,13 @@ body {
 .c-header {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
     padding: 1rem 0;
+
+    @media (min-width: 800px) {
+        justify-content: space-between;
+    }
 
     h1 {
         font-family: coquette, sans-serif;
@@ -210,8 +214,8 @@ footer {
 }
 
 iframe {
-    background: #fff;
-    border-radius: 7px;
+    //background: #fff;
+    //border-radius: 7px;
 }
 
 .c-button {

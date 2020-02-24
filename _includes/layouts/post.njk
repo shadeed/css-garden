@@ -4,3 +4,14 @@ templateClass: tmpl-post
 ---
 
 {{ content | safe }}
+
+<script type="text/javascript">
+  // https://stackoverflow.com/a/9163087
+  function iframeLoaded() {
+      var iFrameID = document.getElementById('options');
+      if(iFrameID) {
+            iFrameID.height = "";
+            iFrameID.height = iFrameID.contentWindow.document.body.scrollHeight + "px";
+      }   
+  }
+</script> 
