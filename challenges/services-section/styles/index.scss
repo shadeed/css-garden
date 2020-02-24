@@ -1,0 +1,87 @@
+@import "reset.css";
+
+$brand-primary: #ffeeaf;
+$color-black: #3c3c3c;
+
+.wrapper {
+  max-width: 700px;
+  padding: 2rem 1rem;
+  margin: 0 auto;
+}
+
+img {
+  max-width: 100%;
+}
+
+body {
+  font-family: 'Rubik';
+  line-height: 1.35;
+}
+
+form {
+  padding: 1rem;
+}
+
+form > div {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+  grid-gap: 1rem;
+  align-content: center;
+  
+  h2 {
+    grid-column: -1 / 1;
+    flex-basis: 100%;
+    font-weight: bold;
+    font-size: 20px;
+  }
+}
+
+.c-input-group {
+  flex: 1;
+  
+  input {
+    position: absolute;
+    width: 0;
+    height: 0;
+    opacity: 0;
+  }
+  
+  input:checked + label {
+    font-weight: bold;
+    color: #000;
+    background: #ffca05;
+    box-shadow: 0 0 0 5px $brand-primary;
+    
+    &:before {
+      border: 7px solid #222;
+    }
+  }
+  
+  label {
+    position: relative;
+    display: block;
+    border: 1px solid #ccc;
+    box-shadow: 0 0 0 5px transparent;
+    padding: 0.65rem 1rem 0.65rem 40px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    &:before {
+      content: "";
+      position: absolute;
+      left: 10px;
+      top: calc(50% - 10px);
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      border: 2px solid #ccc;
+    }
+  }
+}
+
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
+
+@import "option-1.scss";
