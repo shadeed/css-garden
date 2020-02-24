@@ -31,5 +31,8 @@
     "markdown-it": "^8.4.2",
     "markdown-it-anchor": "^5.2.5",
     "sass": "^1.25.0"
+  },
+  "dependencies": {
+    "node-gyp": "^6.1.0"
   }
 }

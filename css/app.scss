@@ -51,11 +51,16 @@ body {
     padding: 3rem 0;
     text-align: center;
 
+    .o-wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
     h2 {
         position: relative;
         font-size: 30px;
         font-weight: bold;
-        width: fit-content;
+        //width: fit-content;
         margin: 0 auto 4rem;
 
         @media (min-width: 800px) {
@@ -91,6 +96,10 @@ body {
 
     a {
         text-decoration: underline;
+    }
+
+    .c-button {
+        align-self: center;
     }
 }
 

@@ -88,11 +88,13 @@ body {
 .c-hero {
   padding: 3rem 0;
   text-align: center; }
+  .c-hero .o-wrapper {
+    display: flex;
+    flex-direction: column; }
   .c-hero h2 {
     position: relative;
     font-size: 30px;
     font-weight: bold;
-    width: fit-content;
     margin: 0 auto 4rem; }
     @media (min-width: 800px) {
       .c-hero h2 {
@@ -118,6 +120,8 @@ body {
         font-size: 1.25rem; } }
   .c-hero a {
     text-decoration: underline; }
+  .c-hero .c-button {
+    align-self: center; }
 
 .c-section {
   padding: 2rem 0; }
