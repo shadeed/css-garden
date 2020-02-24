@@ -1,5 +1,5 @@
 # Learn CSS Garden
-Learn CSS Garden is inspired by the well-known project, [CSS Zen Garden](http://www.csszengarden.com/). When I wrote my article [Same HTML, different CSS](http://localhost:8080/#), I noticed that people are interested in the concept and it reminds them of Zen Garden.
+Learn CSS Garden is inspired by the well-known project, [CSS Zen Garden](http://www.csszengarden.com/). When I wrote my article [Same HTML, different CSS](https://ishadeed.com/article/same-html-different-css/), I noticed that people are interested in the concept and it reminds them of Zen Garden.
 
 I got inspired by that and decided to make a similar project, but on a component-level.
 
