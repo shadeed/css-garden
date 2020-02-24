@@ -15,6 +15,17 @@ $color-black: #3c3c3c;
   padding: 1rem;
 }
 
+.option-title {
+  color: #1f2e17;
+  font-weight: 700;
+  font-size: 1.25rem;
+  margin-bottom: 0.5rem;
+
+  a {
+    color: inherit;
+  }
+}
+
 img {
   max-width: 100%;
 }
