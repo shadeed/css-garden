@@ -134,6 +134,8 @@ body {
   max-width: 750px; }
   .c-section--about p:not(:last-child) {
     margin-bottom: 1rem; }
+.c-section--about a {
+  text-decoration: underline; }
 
 .c-challenges__wrapper {
   display: grid;
