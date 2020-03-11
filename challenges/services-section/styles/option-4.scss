@@ -1,0 +1,118 @@
+.services-option-4 {
+  body {
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Rokkitt', serif;
+  }
+}
+
+div.option-4 {
+  $black: #2b2d32;
+  $silver: #9e9e9e;
+  $white: #f9f9f9;
+
+  p {
+    line-height: 24px;
+  }
+
+  .c-section {
+    width: 100%;
+    max-width: 900px;
+    height: auto;
+    font-family: 'Rokkitt', serif;
+    padding: 1em;
+
+    &__title {
+      text-align: center;
+      font-size: 30px;
+      margin: 10px auto 40px auto;
+      background: $black;
+      color: $white;
+      padding: 15px 0;
+      border-top: 10px solid silver;
+    }
+  }
+
+  .c-services {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(360px, 1fr));
+    grid-gap: 1em;
+
+    &__item {
+      padding: 12px 20px;
+      position: relative;
+      transition: .2s;
+      background: $white;
+      transition: .3s;
+      border-radius: 3px;
+
+      &::after {
+        display: block;
+        content: '';
+        width: 84%;
+        height: 90%;
+        background: rgba(0,0,0,.2);
+        position: absolute;
+        bottom: 8px;
+        left: 50%;
+        z-index: -1;
+        transform: translate(-50%);
+        filter: blur(5px);
+        transition: .3s;
+      }
+
+      &:hover::after {
+        bottom: -3px;
+        width: 97%;
+        filter: blur(7px);
+      }
+
+
+      h3 {
+        font-size: 1.4em;
+        padding: 20px 0;
+        line-height: 40px;
+
+        &::before {
+          content: '';
+          display: block;
+          width: 40px;
+          height: 40px;
+          float: left;
+          margin-right: 15px;
+          background-repeat: no-repeat;
+        }
+      }
+
+      p {
+        font-family: sans-serif;
+        font-size: .9rem;
+      }
+
+      &:nth-child(1) h3::before {
+        background-image: url('https://res.cloudinary.com/dyxt6lafa/image/upload/v1583651372/css-garden/gvyviudxfqjmrqmrhu0r.svg');
+      }
+
+      &:nth-child(2) h3::before {
+        background-image: url('https://res.cloudinary.com/dyxt6lafa/image/upload/v1583651648/css-garden/yh0k6nnzl1tgw8utdhaq.svg');
+      }
+
+      &:nth-child(3) h3::before {
+        background-image: url('https://res.cloudinary.com/dyxt6lafa/image/upload/v1583651704/css-garden/g2pins4xeerpmzige1cx.svg');
+      }
+
+      &:nth-child(4) h3::before {
+        background-image: url('https://res.cloudinary.com/dyxt6lafa/image/upload/v1583651829/css-garden/s5iyesnbe5zizjonnotb.svg');
+      }
+
+      &:nth-child(5) h3::before {
+        background-image: url('https://res.cloudinary.com/dyxt6lafa/image/upload/v1583651916/css-garden/kzleeherokg95k9e0dah.svg');
+      }
+      &:nth-child(6) h3::before {
+        background-image: url('https://res.cloudinary.com/dyxt6lafa/image/upload/v1583651994/css-garden/op6pbgt9vb9unl5tinxj.svg');
+      }
+    }
+  }
+
+}

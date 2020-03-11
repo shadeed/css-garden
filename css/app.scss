@@ -251,3 +251,9 @@ iframe {
         font-weight: 400;
     }
 }
+
+.solution {
+  &:not(:last-child) {
+    margin-bottom: 3rem;
+  }
+}

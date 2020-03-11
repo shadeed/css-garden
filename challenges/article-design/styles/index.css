@@ -70,6 +70,9 @@ form > div {
 *, *:before, *:after {
   box-sizing: border-box; }
 
+.solution:not(:last-child) {
+  margin-bottom: 3rem; }
+
 div.option-1 img {
   max-width: 100%; }
 

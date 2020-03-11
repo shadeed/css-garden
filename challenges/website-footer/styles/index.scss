@@ -26,6 +26,10 @@ $color-black: #3c3c3c;
   }
 }
 
+img {
+  max-width: 100%;
+}
+
 body {
   font-family: 'Rubik';
   line-height: 1.35;
@@ -104,8 +108,4 @@ form > div {
 
 
 @import "option-1.scss";
-@import "option-2.scss";
-@import "option-3.scss";
-@import "option-4.scss";
-@import "option-5.scss";
-@import "option-6.scss";
+
