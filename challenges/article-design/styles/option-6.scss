@@ -1,0 +1,115 @@
+div.option-6 {
+  $black: #2B2D32;
+  $silver:#9E9E9E;
+  $white: #F9F9F9;
+
+  @mixin whiteBG($pad) {
+    padding: #{$pad}px;
+    background: $white;
+  }
+
+  a {
+    text-decoration: none;
+    color: inherit;
+    font-family: sans-serif;
+  }
+
+  .c-entry {
+    width: 100%;
+    max-width: 840px;
+    height: 440px;
+    overflow: hidden;
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 1fr);
+
+    &__title {
+      grid-column: 4 / 9;
+      grid-row: 5 / 7;
+      font-size: 2rem;
+      align-self: center;
+      @include whiteBG(25);
+      border-top: 10px solid $silver;
+    }
+
+    &__figure {
+      grid-column: 1 / 9;
+      grid-row: 1 / 6;
+      object-fit: cover;
+      position: relative;
+      z-index: -1;
+    }
+
+    &__author {
+      grid-column: 4 / 9;
+      grid-row: 7 / 8;
+      display: flex;
+      align-items: center;
+      font-family: sans-serif;
+      font-size: .9rem;
+      align-self: center;
+      color: $silver;
+      @include whiteBG(20);
+
+      img {
+        height: 36px;
+        border-radius: 50%;
+        margin-right: 10px;
+      }
+
+      a {
+        padding-left: 5px;
+
+        &:nth-child(3) {
+          color: lighten($silver, 20);
+          font-size: .8rem;
+        }
+      }
+    }
+
+    .c-list {
+      grid-column: 4 / 9;
+      grid-row: 8 / 9;
+      align-self: center;
+
+      li {
+        display: inline-block;
+        background: $silver;
+
+        a {
+          display: block;
+          padding: 5px 8px;
+          font-size: .7rem;
+          color: $white;
+        }
+      }
+    }
+  }
+
+
+  @media only screen and (max-width: 640px) {
+    .c-entry {
+      &__title {
+        grid-column: 2 / 8;
+        grid-row: 4 / 6;
+        font-size: 1.8rem;
+      }
+      &__author {
+        grid-column: 2 / 8;
+        grid-row: 6 / 8;
+      }
+      .c-list {
+        grid-column: 3 / 7;
+        justify-self: center;
+      }
+      &__figure {
+        grid-column: 3 / 6;
+        grid-row: 2 / 5;
+        justify-self: center;
+      }
+    }
+
+  }
+
+
+}

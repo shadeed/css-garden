@@ -4,3 +4,6 @@ package-lock.json
 .sass-cache/
 .DS_Store
 challenges/.DS_Store
+.idea/
+challenges/services-section/styles/config.codekit3
+challenges/config.codekit3
