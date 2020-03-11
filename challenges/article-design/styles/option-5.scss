@@ -2,6 +2,24 @@ $brand-primary: #ffeeaf;
 $color-black: #3c3c3c;
 
 div.option-5 {
+  img {
+    max-width: 100%;
+  }
+
+  .c-tag {
+    display: inline-block;
+    background-color: $brand-primary;
+    padding: 6px 12px;
+    border-radius: 100px;
+    font-size: 14px;
+    color: $color-black;
+    text-decoration: none;
+  }
+
+  .c-list {
+    display: flex;
+    flex-wrap: wrap;
+  }
   .wrapper {
     max-width: initial;
   }
